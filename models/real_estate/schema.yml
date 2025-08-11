@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: real_estate
+    database: ineuronchatbot-dfgi     # GCP Project ID
+    schema: "1"                       # Dataset name (quoted because it's numeric)
+    tables:
+      - name: Housing                 # Table name
+        description: "Raw housing sales data from BigQuery"
